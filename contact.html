@@ -42,7 +42,7 @@
             max-width: 900px;
             display: flex;
             gap: 40px;
-            align-items: flex-start;
+            align-items: flex-start; /* 确保容器内元素顶部对齐 */
             margin-top: 10px;
         }
 
@@ -50,10 +50,16 @@
             width: 300px;
             height: auto;
             flex-shrink: 0;
+            display: block; /* 防止图片底部产生多余间隙 */
         }
 
         .bio-content {
             text-align: left;
+        }
+
+        /* 关键修改：清除介绍文字第一个标签的默认上边距，确保完美顶格 */
+        .bio-content p:first-child { 
+            margin-top: 0; 
         }
 
         .bio-content h2 { margin-top: 0; font-size: 1.2em; }
