@@ -37,12 +37,11 @@
             color: #000;
         }
 
-        /* 联系页面布局 */
         .contact-container {
             max-width: 900px;
             display: flex;
             gap: 40px;
-            align-items: flex-start; /* 确保容器内元素顶部对齐 */
+            align-items: flex-start;
             margin-top: 10px;
         }
 
@@ -50,20 +49,30 @@
             width: 300px;
             height: auto;
             flex-shrink: 0;
-            display: block; /* 防止图片底部产生多余间隙 */
+            display: block;
         }
 
         .bio-content {
             text-align: left;
         }
 
-        /* 关键修改：清除介绍文字第一个标签的默认上边距，确保完美顶格 */
-        .bio-content p:first-child { 
-            margin-top: 0; 
-        }
-
-        .bio-content h2 { margin-top: 0; font-size: 1.2em; }
+        .bio-content p:first-child { margin-top: 0; }
         .bio-content p { margin-bottom: 15px; }
+
+        /* 新增：社交媒体图标容器样式 */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-links img {
+            width: 40px; /* 图标大小 */
+            height: 40px;
+            transition: transform 0.2s;
+        }
+        .social-links img:hover {
+            transform: scale(1.1); /* 悬停缩放效果 */
+        }
 
         footer {
             margin-top: 50px;
@@ -91,6 +100,18 @@
             <strong>Email:</strong> hazelzhengart@gmail.com</p>
 
             <p>I received my BA in Animation from Beijing Institute of Fashion Technology and an MFA in Digital Arts from Pratt Institute. Following graduation, I worked as an animator in New York, collaborating with clients including Warner Bros., McDonald’s, Facebook, and Instagram. Alongside my commercial practice, I have continued my theoretical studies and research. After developing my own conceptual framework, I transitioned to fine art, translating these evolving ideas into the tangible, haptic materiality of oil painting.</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/hazel_zhengq?igsh=MXR0c2FvbHA4YXZ6cQ%3D%3D&utm_source=qr" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/hazelzheng" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://vimeo.com/hazelzheng" target="_blank">
+                    <img src="images/vimeo.png" alt="Vimeo">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -100,3 +121,4 @@
 
 </body>
 </html>
+
