@@ -16,44 +16,37 @@
             align-items: center;
         }
 
-        /* Logo 样式 */
         .site-logo {
             width: 100px;
             height: 100px;
             margin-bottom: 30px;
         }
 
-        /* 导航栏样式及悬停效果 */
         nav { margin-bottom: 50px; }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #888;
+            color: #888; /* 默认灰色 */
             font-size: 0.9em;
             letter-spacing: 2px;
             text-transform: uppercase;
-            transition: color 0.3s ease; /* 平滑过渡 */
+            transition: color 0.3s ease;
         }
+
+        /* 悬停效果 */
         nav a:hover {
             color: #000;
         }
 
-        .container { max-width: 800px; text-align: left; }
-        
-        /* 图片样式 */
-        .container img { 
-            width: 100%; 
-            height: auto; 
-            display: block; 
-            margin-bottom: 20px; 
+        /* 当前页面高亮效果 */
+        nav a.active {
+            color: #000;
+            font-weight: bold; /* 可选：加粗让当前项更突出 */
         }
 
-        .caption { 
-            font-style: italic; 
-            margin-bottom: 30px; 
-            color: #666;
-            font-size: 0.9em;
-        }
+        .container { max-width: 800px; text-align: left; }
+        .container img { width: 100%; height: auto; display: block; margin-bottom: 20px; }
+        .caption { font-style: italic; margin-bottom: 30px; color: #666; font-size: 0.9em; }
         
         .artwork-description {
             max-width: 700px;
@@ -63,7 +56,6 @@
             color: #444;
             text-align: justify;
         }
-        
         .artwork-description p { margin-bottom: 25px; }
     </style>
 </head>
@@ -72,9 +64,9 @@
     <img src="images/logo.png" alt="Logo" class="site-logo">
 
     <nav>
-        <a href="#">PAINTING</a>
-        <a href="#">ANIMATION</a>
-        <a href="#">CONTACT</a>
+        <a href="index.html" class="active">PAINTING</a>
+        <a href="animation.html">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
     </nav>
 
     <div class="container">
@@ -100,5 +92,6 @@
 
 </body>
 </html>
+
 
 
