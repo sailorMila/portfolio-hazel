@@ -59,6 +59,48 @@
         }
 
         .project-title { margin-top: 10px; font-size: 0.85em; color: #777; }
+        /* Personal Projects */
+.personal-projects {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.personal-projects h2 {
+    margin-bottom: 30px;
+}
+
+.personal-item {
+    margin-bottom: 45px;
+}
+
+.personal-item h3 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    color: #6bb7d6;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.personal-item a {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.personal-item img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    transition: transform 0.35s ease, filter 0.35s ease;
+    filter: brightness(100%);
+}
+
+.personal-item img:hover {
+    transform: scale(1.03);
+    filter: brightness(115%);
+}
     </style>
 </head>
 <body>
@@ -148,6 +190,34 @@
         </div>
     </div>
 
+    <hr>
+
+<div class="personal-projects">
+
+    <h2>PERSONAL PROJECTS</h2>
+
+    <div class="personal-item">
+        <h3>Crossing</h3>
+        <a href="crossing.html">
+            <img src="images/crossing.jpg" alt="Crossing">
+        </a>
+    </div>
+
+    <div class="personal-item">
+        <h3>Lotus Blossom</h3>
+        <a href="lotus_blossom.html">
+            <img src="images/lotus_blossom.jpg" alt="Lotus Blossom">
+        </a>
+    </div>
+
+    <div class="personal-item">
+        <h3>Flamenco</h3>
+        <a href="flamenco.html">
+            <img src="images/flamenco.jpg" alt="Flamenco">
+        </a>
+    </div>
+
+</div>
     <script src="https://player.vimeo.com/api/player.js"></script>
 
 </body>
