@@ -26,42 +26,46 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #888; /* 默认灰色 */
+            color: #888;
             font-size: 0.9em;
             letter-spacing: 2px;
             text-transform: uppercase;
             transition: color 0.3s ease;
         }
 
-        /* 悬停效果 */
         nav a:hover {
             color: #000;
         }
 
-        /* 当前页面高亮效果 */
         nav a.active {
             color: #000;
-            font-weight: /* 可选：加粗让当前项更突出 */
         }
 
         .container { max-width: 800px; text-align: left; }
-        
-        /* 修改：给图片增加过渡动画 */
-        .container img { 
-            width: 100%; 
-            height: auto; 
-            display: block; 
-            margin-bottom: 20px; 
-            transition: transform 0.3s ease; 
+
+        /* === 修改：外层容器包裹图片，用于裁剪 === */
+        .image-wrapper {
+            width: 100%;
+            overflow: hidden;          /* 裁剪超出部分，保证外轮廓尺寸不变 */
+            display: block;
+            margin-bottom: 20px;
         }
 
-        /* 修改：鼠标悬停时的放大效果 */
-        .container a:hover img {
-            transform: scale(1.02);
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease; /* 平滑过渡 */
+            transform: scale(1);            /* 初始状态 */
+        }
+
+        /* 悬停时图片微微放大，但外框被裁剪，所以外轮廓不变 */
+        .image-wrapper:hover img {
+            transform: scale(1.04);
         }
 
         .caption { font-style: italic; margin-bottom: 30px; color: #666; font-size: 0.9em; }
-        
+
         .artwork-description {
             max-width: 800px;
             margin: 0 auto;
@@ -84,10 +88,10 @@
     </nav>
 
     <div class="container">
-        <a href="images/maya_and_shamaness.jpg" target="_blank">
+        <a href="images/maya_and_shamaness.jpg" target="_blank" class="image-wrapper">
             <img src="images/maya_and_shamaness.jpg" alt="Maya and the Shamaness">
         </a>
-        
+
         <div class="caption">
             <span style="font-style: italic;">Maya and the Shamaness: A Return to the Sublime</span><span style="font-style: normal; font-weight: normal;">, 2026, oil on canvas, 150 x 110 cm</span>
         </div>
@@ -97,10 +101,10 @@
             logos flickers.<br>
             In the tides of the womb, words are born,<br>
             eros stirs.</p>
-            
-            <p>Inspired by the philosophy of Indra’s Net and the writings of Ira Livingston, the oil painting <em>Maya and the Shamaness: A Return to the Sublime</em> reconstructs time, language, and perception in response to the existential crisis of the technological age. While AI reduces language to abstract data and predictive algorithms, lived language continuously rewires neural circuits and reshapes the boundaries of reality, keeping the future perpetually open. In this sense, the painting enacts language as a living system coupled with perception and the body, generating meaning through resonance rather than representation. It lifts the mask of linear Logos, pointing toward a wholeness always present through autopoiesis embedded in sympoiesis.</p>
 
-            <p>Two heterogeneous goddesses form a non-dual generative loop. As poems recursively emerge between them, viewers shift between reading and seeing, and words reveal their visual materiality beyond referentiality. English and Chinese do not transparently translate one another but generate new forms through their shared network. These figurative nodes fall out of focus within an abstract, fractal ground, through which the viewer’s gaze glides, allowing an absent whole to retroactively constellate present local fractals, while new connections continually remap the future whole. The viewer thus moves from a visual recipient to a tactile co-creator: meaning emerges immediately through participation, no longer deferred. As figuration and abstraction, language and image, vision and touch interweave, multidimensional perception is activated. Logos is braided into complexity. Consciousness is no longer central to control and division, but sinks into a pluralistic, iridescent, networked holographic field driven by Eros — Elijah and Salome are one.</p>
+            <p>Inspired by the philosophy of Indra's Net and the writings of Ira Livingston, the oil painting <em>Maya and the Shamaness: A Return to the Sublime</em> reconstructs time, language, and perception in response to the existential crisis of the technological age. While AI reduces language to abstract data and predictive algorithms, lived language continuously rewires neural circuits and reshapes the boundaries of reality, keeping the future perpetually open. In this sense, the painting enacts language as a living system coupled with perception and the body, generating meaning through resonance rather than representation. It lifts the mask of linear Logos, pointing toward a wholeness always present through autopoiesis embedded in sympoiesis.</p>
+
+            <p>Two heterogeneous goddesses form a non-dual generative loop. As poems recursively emerge between them, viewers shift between reading and seeing, and words reveal their visual materiality beyond referentiality. English and Chinese do not transparently translate one another but generate new forms through their shared network. These figurative nodes fall out of focus within an abstract, fractal ground, through which the viewer's gaze glides, allowing an absent whole to retroactively constellate present local fractals, while new connections continually remap the future whole. The viewer thus moves from a visual recipient to a tactile co-creator: meaning emerges immediately through participation, no longer deferred. As figuration and abstraction, language and image, vision and touch interweave, multidimensional perception is activated. Logos is braided into complexity. Consciousness is no longer central to control and division, but sinks into a pluralistic, iridescent, networked holographic field driven by Eros — Elijah and Salome are one.</p>
 
             <p>The sublime no longer descends from above; it sprouts from the soil, whispering among the roots.</p>
         </div>
