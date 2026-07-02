@@ -45,7 +45,21 @@
         }
 
         .container { max-width: 800px; text-align: left; }
-        .container img { width: 100%; height: auto; display: block; margin-bottom: 20px; }
+        
+        /* 修改：给图片增加过渡动画 */
+        .container img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            margin-bottom: 20px; 
+            transition: transform 0.3s ease; 
+        }
+
+        /* 修改：鼠标悬停时的放大效果 */
+        .container a:hover img {
+            transform: scale(1.02);
+        }
+
         .caption { font-style: italic; margin-bottom: 30px; color: #666; font-size: 0.9em; }
         
         .artwork-description {
@@ -94,6 +108,7 @@
 
 </body>
 </html>
+
 
 
 
