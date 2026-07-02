@@ -16,22 +16,20 @@
             align-items: center;
         }
 
-        /* Logo 样式 */
         .site-logo {
             width: 205px;
             height: 120px;
             margin-bottom: 20px;
         }
 
-        /* 导航及基础样式 */
         nav { margin-bottom: 10px; }
         nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
         nav a:hover, nav a.active { color: #000; }
 
-        h2 { font-size: 1.2em; color: #555; text-transform: uppercase; letter-spacing: 2px; margin: 40px 0 20px; }
+        /* 标题字体大小加倍 */
+        h2 { font-size: 2.4em; color: #555; text-transform: uppercase; letter-spacing: 2px; margin: 40px 0 20px; }
         hr { width: 100%; max-width: 900px; border: 0; border-top: 1px solid #eee; margin: 20px 0; }
 
-        /* 商业项目网格布局 */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -47,60 +45,53 @@
             height: 180px;
             object-fit: cover;
             display: block;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            filter: brightness(100%);
+            transition: transform 0.3s ease; /* 移除 filter */
         }
 
-        /* 悬停变亮放大效果 */
+        /* 悬停仅放大，移除亮度变化 */
         .project-item img:hover {
             transform: scale(1.05);
-            filter: brightness(115%);
             cursor: pointer;
         }
 
         .project-title { margin-top: 0px; font-size: 0.85em; color: #777; }
-        /* Personal Projects */
-.personal-projects {
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-    margin: 50px 0;
-}
 
-.personal-projects h2 {
-    margin-bottom: 30px;
-}
+        /* Personal Projects 向上移动 */
+        .personal-projects {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin: -20px 0 50px 0; 
+        }
 
-.personal-item {
-    margin-bottom: 45px;
-}
+        .personal-item {
+            margin-bottom: 30px; /* 调整间距以对齐 */
+        }
 
-.personal-item h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    color: #6bb7d6;
-    font-weight: normal;
-    margin-bottom: 18px;
-}
+        .personal-item h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            color: #000; /* 字体颜色改为黑色 */
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
 
-.personal-item a {
-    display: inline-block;
-    overflow: hidden;
-}
+        .personal-item a {
+            display: inline-block;
+            overflow: hidden;
+        }
 
-.personal-item img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    transition: transform 0.35s ease, filter 0.35s ease;
-    filter: brightness(100%);
-}
+        .personal-item img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            transition: transform 0.35s ease; /* 移除 filter */
+        }
 
-.personal-item img:hover {
-    transform: scale(1.03);
-    filter: brightness(115%);
-}
+        .personal-item img:hover {
+            transform: scale(1.03);
+        }
     </style>
 </head>
 <body>
@@ -125,96 +116,41 @@
     <h2>Commercial Projects</h2>
     
     <div class="projects-grid">
-        <div class="project-item">
-            <a href="#"><img src="images/lizzo_x_queer_eye.jpg" alt="Lizzo x Queer Eye"></a>
-            <p class="project-title">Lizzo x Queer Eye</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/child_mind_institute.jpg" alt="Child Mind Institute"></a>
-            <p class="project-title">Child Mind Institute</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/leukemia_lymphoma_society.jpg" alt="Leukemia & Lymphoma Society"></a>
-            <p class="project-title">Leukemia & Lymphoma Society</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/mtndew.jpg" alt="MtnDew"></a>
-            <p class="project-title">MtnDew</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/warner_bros.jpg" alt="Warner Bros"></a>
-            <p class="project-title">Warner Bros</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/audible.jpg" alt="Audible"></a>
-            <p class="project-title">Audible</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/salesforce.jpg" alt="Salesforce"></a>
-            <p class="project-title">Salesforce</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/mcdonald's.jpg" alt="McDonalds"></a>
-            <p class="project-title">McDonald's</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/century_21.jpg" alt="Century 21"></a>
-            <p class="project-title">Century 21</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
-            <p class="project-title">Instagram</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/lemonade.jpg" alt="Lemonade"></a>
-            <p class="project-title">Lemonade</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/cyramza.jpg" alt="Cyramza"></a>
-            <p class="project-title">Cyramza</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/habito.jpg" alt="Habito"></a>
-            <p class="project-title">Habito</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/tractor.jpg" alt="Tractor"></a>
-            <p class="project-title">Tractor</p>
-        </div>
-        <div class="project-item">
-            <a href="#"><img src="images/seamless.jpg" alt="Seamless"></a>
-            <p class="project-title">Seamless</p>
-        </div>
+        <div class="project-item"><a href="#"><img src="images/lizzo_x_queer_eye.jpg" alt="Lizzo x Queer Eye"></a><p class="project-title">Lizzo x Queer Eye</p></div>
+        <div class="project-item"><a href="#"><img src="images/child_mind_institute.jpg" alt="Child Mind Institute"></a><p class="project-title">Child Mind Institute</p></div>
+        <div class="project-item"><a href="#"><img src="images/leukemia_lymphoma_society.jpg" alt="Leukemia & Lymphoma Society"></a><p class="project-title">Leukemia & Lymphoma Society</p></div>
+        <div class="project-item"><a href="#"><img src="images/mtndew.jpg" alt="MtnDew"></a><p class="project-title">MtnDew</p></div>
+        <div class="project-item"><a href="#"><img src="images/warner_bros.jpg" alt="Warner Bros"></a><p class="project-title">Warner Bros</p></div>
+        <div class="project-item"><a href="#"><img src="images/audible.jpg" alt="Audible"></a><p class="project-title">Audible</p></div>
+        <div class="project-item"><a href="#"><img src="images/salesforce.jpg" alt="Salesforce"></a><p class="project-title">Salesforce</p></div>
+        <div class="project-item"><a href="#"><img src="images/mcdonalds.jpg" alt="McDonalds"></a><p class="project-title">McDonald's</p></div>
+        <div class="project-item"><a href="#"><img src="images/century_21.jpg" alt="Century 21"></a><p class="project-title">Century 21</p></div>
+        <div class="project-item"><a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><p class="project-title">Instagram</p></div>
+        <div class="project-item"><a href="#"><img src="images/lemonade.jpg" alt="Lemonade"></a><p class="project-title">Lemonade</p></div>
+        <div class="project-item"><a href="#"><img src="images/cyramza.jpg" alt="Cyramza"></a><p class="project-title">Cyramza</p></div>
+        <div class="project-item"><a href="#"><img src="images/habito.jpg" alt="Habito"></a><p class="project-title">Habito</p></div>
+        <div class="project-item"><a href="#"><img src="images/tractor.jpg" alt="Tractor"></a><p class="project-title">Tractor</p></div>
+        <div class="project-item"><a href="#"><img src="images/seamless.jpg" alt="Seamless"></a><p class="project-title">Seamless</p></div>
     </div>
 
     <hr>
 
-<div class="personal-projects">
-
-    <h2>PERSONAL PROJECTS</h2>
-
-    <div class="personal-item">
-        <h3>Crossing</h3>
-        <a href="crossing.html">
-            <img src="images/crossing.jpg" alt="Crossing">
-        </a>
+    <div class="personal-projects">
+        <h2>PERSONAL PROJECTS</h2>
+        <div class="personal-item">
+            <h3>Crossing</h3>
+            <a href="crossing.html"><img src="images/crossing.jpg" alt="Crossing"></a>
+        </div>
+        <div class="personal-item">
+            <h3>Lotus Blossom</h3>
+            <a href="lotus_blossom.html"><img src="images/lotus_blossom.jpg" alt="Lotus Blossom"></a>
+        </div>
+        <div class="personal-item">
+            <h3>Flamenco</h3>
+            <a href="flamenco.html"><img src="images/flamenco.jpg" alt="Flamenco"></a>
+        </div>
     </div>
 
-    <div class="personal-item">
-        <h3>Lotus Blossom</h3>
-        <a href="lotus_blossom.html">
-            <img src="images/lotus_blossom.jpg" alt="Lotus Blossom">
-        </a>
-    </div>
-
-    <div class="personal-item">
-        <h3>Flamenco</h3>
-        <a href="flamenco.html">
-            <img src="images/flamenco.jpg" alt="Flamenco">
-        </a>
-    </div>
-
-</div>
     <script src="https://player.vimeo.com/api/player.js"></script>
 
 </body>
