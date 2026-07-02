@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
+    <title>Animation - Qing (Hazel) Zheng</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -16,45 +16,45 @@
             align-items: center;
         }
 
-        .site-logo {
-            width: 205px;
-            height: 120px;
-            margin-bottom: 20px;
-        }
+        /* 导航及基础样式 */
+        nav { margin-bottom: 50px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
+        nav a:hover, nav a.active { color: #000; }
 
-        nav { margin-bottom: 60px; }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #888;
-            font-size: 0.9em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
+        h2 { font-size: 1.2em; color: #555; text-transform: uppercase; letter-spacing: 2px; margin: 40px 0 20px; }
+        hr { width: 100%; max-width: 900px; border: 0; border-top: 1px solid #eee; margin: 20px 0; }
 
-        nav a:hover, nav a.active {
-            color: #000;
-        }
-
-        /* 视频容器样式 */
-        .video-wrapper {
+        /* 商业项目网格布局 */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 900px;
             width: 100%;
-            max-width: 800px;
-            margin-top: 20px;
         }
+
+        .project-item { text-align: center; }
         
-        .video-title {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.2em;
-            font-weight: bold;
+        .project-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: brightness(100%);
         }
+
+        /* 悬停变亮放大效果 */
+        .project-item img:hover {
+            transform: scale(1.05);
+            filter: brightness(115%);
+            cursor: pointer;
+        }
+
+        .project-title { margin-top: 10px; font-size: 0.85em; color: #777; }
     </style>
 </head>
 <body>
-
-    <img src="images/logo.png" alt="Logo" class="site-logo">
 
     <nav>
         <a href="index.html">PAINTING</a>
@@ -62,17 +62,80 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 
-    <div class="video-title">Demo Reel 2023</div>
+    <h2>Demo Reel 2023</h2>
+    <hr>
+    <div style="width: 100%; max-width: 800px; margin-bottom: 50px;">
+        <iframe src="https://player.vimeo.com/video/..." width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    <div class="video-wrapper">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/888366019?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="Demo Reel 2023">
-            </iframe>
+    <hr>
+    <h2>Commercial Projects</h2>
+    
+    <div class="projects-grid">
+        <div class="project-item">
+            <a href="#"><img src="images/lizzo_x_queer_eye.jpg" alt="Lizzo x Queer Eye"></a>
+            <p class="project-title">Lizzo x Queer Eye</p>
         </div>
+        <div class="project-item">
+            <a href="#"><img src="images/child_mind_institute.jpg" alt="Child Mind Institute"></a>
+            <p class="project-title">Child Mind Institute</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/leukemia_lymphoma_society.jpg" alt="Leukemia & Lymphoma Society"></a>
+            <p class="project-title">Leukemia & Lymphoma Society</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/mtndew.jpg" alt="MtnDew"></a>
+            <p class="project-title">MtnDew</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/warner_bros.jpg" alt="Warner Bros"></a>
+            <p class="project-title">Warner Bros</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/audible.jpg" alt="Audible"></a>
+            <p class="project-title">Audible</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/salesforce.jpg" alt="Salesforce"></a>
+            <p class="project-title">Salesforce</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/mcdonalds.jpg" alt="McDonalds"></a>
+            <p class="project-title">McDonald's</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/century_21.jpg" alt="Century 21"></a>
+            <p class="project-title">Century 21</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+            <p class="project-title">Instagram</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/lemonade.jpg" alt="Lemonade"></a>
+            <p class="project-title">Lemonade</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/cyramza.jpg" alt="Cyramza"></a>
+            <p class="project-title">Cyramza</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/habito.jpg" alt="Habito"></a>
+            <p class="project-title">Habito</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/tractor.jpg" alt="Tractor"></a>
+            <p class="project-title">Tractor</p>
+        </div>
+        <div class="project-item">
+            <a href="#"><img src="images/seamless.jpg" alt="Seamless"></a>
+            <p class="project-title">Seamless</p>
+        </div>
+    </div>
+
+</body>
+</html>
         <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
 
