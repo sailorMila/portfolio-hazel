@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Mind Institute - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Logo 样式 */
+        .site-logo {
+            width: 205px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        /* 导航样式 - 保持与下方内容 20px 间距 */
+        nav { margin-bottom: 20px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
+        nav a:hover, nav a.active { color: #000; }
+
+        /* 内容区容器 */
+        .content-container {
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+        }
+
+        /* 正文字体大小设置 */
+        .description-text {
+            font-size: 1.05em;
+            margin-bottom: 30px;
+        }
+
+        /* 图片与视频样式 */
+        .main-image { width: 100%; margin-bottom: 30px; display: block; }
+        
+        .video-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .full-width-video {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo 部分 -->
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <!-- 导航部分 -->
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- 主体内容 -->
+    <div class="content-container">
+        
+        <div class="description-text">
+            <p>The Child Mind Institute is an independent, national nonprofit dedicated to transforming the lives of children and families struggling with mental health and learning disorders. My work focuses on creating visual narratives that communicate complex emotional landscapes with clarity and empathy. <a href="https://rikiki.tv/portfolio/nixie-nimbo/">More Info</a></p>
+        </div>
+
+        <!-- 描述下方的图片 -->
+        <img src="images/annie.jpg" alt="Annie" class="main-image">
+
+        <!-- 两个并排的视频 -->
+        <div class="video-grid">
+            <div class="video-item">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/jpbDJt1Fync" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/0dMOEU89P4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- 最底部的 Vimeo 视频 -->
+        <div class="full-width-video">
+            <iframe src="https://player.vimeo.com/video/449898149" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/449898149">Nixie &amp; Nimbo</a> from <a href="https://vimeo.com/hazelzheng">Qing Zheng (Hazel)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
