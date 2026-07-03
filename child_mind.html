@@ -46,9 +46,17 @@
         
         .video-grid {
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* 确保内容在父容器中居中 */
+            align-items: center;
             gap: 20px;
-            margin-bottom: 30px;
+            margin: 0 auto 30px auto; /* 关键：确保容器本身在页面中居中 */
+            max-width: 100%;          /* 确保不超过页面宽度 */
+            flex-wrap: wrap;
+        }
+
+        .video-item {
+            display: flex;
+            justify-content: center;
         }
 
         .full-width-video {
