@@ -10,23 +10,21 @@
             color: #333;
             line-height: 1.6;
             margin: 0;
-            /* 确保 padding 与 index.html 完全一致 */
-            padding: 40px 20px; 
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            /* 强制显示垂直滚动条，确保所有页面居中基准一致 */
+            overflow-y: scroll;
         }
 
         .site-logo {
             width: 205px;
             height: 120px;
-            /* 确保 margin-bottom 与 index.html 一致 */
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
 
-        /* 确保 nav 的 margin-bottom 与 index.html 一致 */
         nav { margin-bottom: 50px; }
-        
         nav a {
             margin: 0 15px;
             text-decoration: none;
@@ -41,13 +39,14 @@
             color: #000;
         }
 
-        /* 修改 contact-container，移除 margin-top，使其跟随 nav 下方的距离 */
+        /* 统一容器最大宽度为 800px */
         .contact-container {
-            max-width: 900px;
+            max-width: 800px;
             display: flex;
             gap: 40px;
             align-items: flex-start;
-            margin-top: 0px; /* 移除额外的顶部间距，直接使用 nav 下方的 50px */
+            margin-top: 0px;
+            width: 100%; /* 确保在小屏幕下能自适应 */
         }
 
         .profile-img {
@@ -64,25 +63,25 @@
         .bio-content p:first-child { margin-top: 0; }
         .bio-content p { margin-bottom: 15px; }
 
-        /* 新增：社交媒体图标容器样式 */
         .social-links {
             margin-top: 20px;
             display: flex;
             gap: 15px;
         }
         .social-links img {
-            width: 40px; /* 图标大小 */
+            width: 40px;
             height: 40px;
             transition: transform 0.2s;
         }
         .social-links img:hover {
-            transform: scale(1.1); /* 悬停缩放效果 */
+            transform: scale(1.1);
         }
 
         footer {
             margin-top: 50px;
             font-size: 0.8em;
             color: #999;
+            width: 800px; /* 保持与容器宽度对齐 */
         }
     </style>
 </head>
@@ -126,4 +125,3 @@
 
 </body>
 </html>
-
