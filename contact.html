@@ -10,7 +10,8 @@
             color: #333;
             line-height: 1.6;
             margin: 0;
-            padding: 40px 20px;
+            /* 确保 padding 与 index.html 完全一致 */
+            padding: 40px 20px; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,10 +20,13 @@
         .site-logo {
             width: 205px;
             height: 120px;
-            margin-bottom: 20px;
+            /* 确保 margin-bottom 与 index.html 一致 */
+            margin-bottom: 20px; 
         }
 
+        /* 确保 nav 的 margin-bottom 与 index.html 一致 */
         nav { margin-bottom: 50px; }
+        
         nav a {
             margin: 0 15px;
             text-decoration: none;
@@ -37,12 +41,13 @@
             color: #000;
         }
 
+        /* 修改 contact-container，移除 margin-top，使其跟随 nav 下方的距离 */
         .contact-container {
             max-width: 900px;
             display: flex;
             gap: 40px;
             align-items: flex-start;
-            margin-top: 0px;
+            margin-top: 0px; /* 移除额外的顶部间距，直接使用 nav 下方的 50px */
         }
 
         .profile-img {
