@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MtnDew - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .description-text {
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 30px; /* 确保正文与下方媒体间距 */
+            color: #333;
+        }
+
+        .media-item {
+            margin-bottom: 30px; /* 统一设置视频/GIF/图片之间的间距 */
+            text-align: center;
+        }
+
+        .media-item img {
+            max-width: 640px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <!-- 视频 1 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/449887527" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p style="font-size: 0.9em; color: #666;"><a href="https://vimeo.com/449887527" style="color: #666; text-decoration: none;">DewnitedStates - Tennessee</a> from <a href="https://vimeo.com/hazelzheng" style="color: #666; text-decoration: none;">Qing Zheng (Hazel)</a> on <a href="https://vimeo.com" style="color: #666; text-decoration: none;">Vimeo</a>.</p>
+        </div>
+
+        <!-- 视频 2 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/340502481" width="450" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p style="font-size: 0.9em; color: #666;"><a href="https://vimeo.com/340502481" style="color: #666; text-decoration: none;">MtnDew -DewnitedStates "Tennessee"</a> from <a href="https://vimeo.com/hellohornet" style="color: #666; text-decoration: none;">Hornet</a> on <a href="https://vimeo.com" style="color: #666; text-decoration: none;">Vimeo</a>.</p>
+        </div>
+
+        <!-- 视频 3 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/340504682" width="450" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p style="font-size: 0.9em; color: #666;"><a href="https://vimeo.com/340504682" style="color: #666; text-decoration: none;">MtnDew - DewnitedStates "United States"</a> from <a href="https://vimeo.com/hellohornet" style="color: #666; text-decoration: none;">Hornet</a> on <a href="https://vimeo.com" style="color: #666; text-decoration: none;">Vimeo</a>.</p>
+        </div>
+
+        <!-- GIF 1 -->
+        <div class="media-item">
+            <img src="images/mtndew_hillbilly.gif" alt="MtnDew Hillbilly">
+        </div>
+
+        <!-- GIF 2 -->
+        <div class="media-item">
+            <img src="images/mtndew_monkey.gif" alt="MtnDew Monkey">
+        </div>
+
+    </div>
+
+</body>
+</html>
