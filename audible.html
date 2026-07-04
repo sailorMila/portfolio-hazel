@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audible - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 媒体容器与描述文字样式 */
+        .media-item {
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+
+        .media-item p {
+            font-size: 1.05em;
+            margin-top: 10px;
+            color: #666;
+        }
+        
+        .media-item p a {
+            color: #666;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <!-- 视频 1 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/391861592" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/391861592">Alias Grace (30 second) murderer v7 112817 - ENDING A</a> from <a href="https://vimeo.com/richchapple">Rich Chapple</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+
+        <!-- 视频 2 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/297175927" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/297175927">Alias Grace</a> from <a href="https://vimeo.com/hazelzheng">Qing Zheng (Hazel)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
