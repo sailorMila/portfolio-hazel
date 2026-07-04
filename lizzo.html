@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            overflow-y: scroll; /* 强制显示滚动条，防止页面跳转抖动 */
+            overflow-y: scroll;
         }
 
         .site-logo {
@@ -23,8 +23,17 @@
             margin-bottom: 20px;
         }
 
-        nav { margin-bottom: 20px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
+        /* 导航样式已调整为与 index.html 完全一致 */
+        nav { margin-bottom: 50px; }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
         nav a:hover, nav a.active { color: #000; }
 
         .content-container {
@@ -34,7 +43,7 @@
         }
 
         .description-text {
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* 调整此项可控制文字与下方内容的距离 */
             font-size: 1.05em;
             color: #555;
         }
@@ -44,10 +53,9 @@
             width: 100%;
         }
 
-        /* 响应式 iframe */
         .video-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 比例 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             margin-bottom: 10px;
@@ -78,22 +86,19 @@
     </nav>
 
     <div class="content-container">
-        <!-- 文字描述单独成块 -->
         <div class="description-text">
-    <p>
-        The official lyric video for "Soulmate"<br>
-        featuring Lizzo and Queer Eye's Fab Five! From the album ‘Cuz I Love You.’
-    </p>
-</div>
+            <p>
+                The official lyric video for "Soulmate"<br>
+                featuring Lizzo and Queer Eye's Fab Five! From the album ‘Cuz I Love You.’
+            </p>
+        </div>
 
-        <!-- 视频 1 -->
         <div class="media-item">
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/js_FjrxJuxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <!-- 视频 2 -->
         <div class="media-item">
             <div class="video-wrapper">
                 <iframe src="https://player.vimeo.com/video/449923545" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -101,7 +106,6 @@
             <p style="font-size: 0.8em; color: #888;">Lizzo x Queer Eye - Soulmate - Corgis by Qing Zheng (Hazel)</p>
         </div>
 
-        <!-- GIF 图片区 -->
         <div class="media-item"><img src="images/lizzo_orig.gif" alt="Lizzo animation"></div>
         <div class="media-item"><img src="images/1111_orig.gif" alt="Corgi 1"></div>
         <div class="media-item"><img src="images/2222_orig.gif" alt="Corgi 2"></div>
