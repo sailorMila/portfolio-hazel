@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Century 21 - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 640px; /* 限制宽度以匹配视频 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 正文样式 */
+        .description-text {
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 30px; 
+            color: #333;
+        }
+
+        /* More Info 样式：暗红色、下划线、居中 */
+        .more-info {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #800000;
+            text-decoration: underline;
+        }
+
+        /* 媒体容器 */
+        .media-item {
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <!-- 正文文字区域 -->
+        <div class="description-text">
+            Century 21 teamed up with Hornet Directors Natalie Labarre and Yves Geleyn to celebrate their 50th-anniversary with 50 years of real-life realtor stories. Across five films—and dozens of illustrations—Natalie and Yves bring an array of personal anecdotes to visual life, ranging from the surreal to the sentimental. With evocative transitions and an abstract style that accentuates the stream-of-conscious storytelling, each spot is full of sophistication, hand-drawn design, and humanity throughout.
+            <a href="#" class="more-info">More Info</a>
+        </div>
+
+        <!-- 视频内容 -->
+        <div class="media-item">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/714787638?h=45048ba1a7" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
