@@ -17,17 +17,29 @@
             overflow-y: scroll;
         }
 
-        .site-logo { width: 205px; height: 120px; margin-bottom: 30px; }
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; /* 已修改：统一为20px */
+        }
 
         nav { margin-bottom: 50px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; /* 已添加：加入悬停渐变过渡 */
+        }
         nav a:hover, nav a.active { color: #000; }
 
         /* 正文文字样式 */
         .description-text {
             text-align: center;
             font-size: 1.05em;
-            margin-bottom: 20px; /* 文字和下方内容距离 20px */
+            margin-bottom: 20px;
             color: #333;
         }
 
@@ -69,13 +81,13 @@
     <!-- 视频 1 -->
     <div class="media-item">
         <iframe src="https://player.vimeo.com/video/374467420" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <p><a href="https://vimeo.com/374467420">Leukemia &amp; Lymphoma Society</a> from <a href="https://vimeo.com/hellohornet">Hornet</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <p style="font-size: 0.9em; color: #666;"><a href="https://vimeo.com/374467420" style="color: #666; text-decoration: none;">Leukemia &amp; Lymphoma Society</a> from <a href="https://vimeo.com/hellohornet" style="color: #666; text-decoration: none;">Hornet</a> on <a href="https://vimeo.com" style="color: #666; text-decoration: none;">Vimeo</a>.</p>
     </div>
 
     <!-- 视频 2 -->
     <div class="media-item">
         <iframe src="https://player.vimeo.com/video/449880861" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <p><a href="https://vimeo.com/449880861">Leukemia &amp; Lymphoma Society</a> from <a href="https://vimeo.com/hazelzheng">Qing Zheng (Hazel)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <p style="font-size: 0.9em; color: #666;"><a href="https://vimeo.com/449880861" style="color: #666; text-decoration: none;">Leukemia &amp; Lymphoma Society</a> from <a href="https://vimeo.com/hazelzheng" style="color: #666; text-decoration: none;">Qing Zheng (Hazel)</a> on <a href="https://vimeo.com" style="color: #666; text-decoration: none;">Vimeo</a>.</p>
     </div>
 
     <!-- 图片 lls.jpg -->
