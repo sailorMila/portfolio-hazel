@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 标题样式：斜体 */
+        .project-title {
+            font-style: italic;
+            font-size: 1.05em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Full Video 链接样式：灰色 */
+        .full-video-link {
+            display: block;
+            color: #aaa;
+            text-decoration: none;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* 媒体容器 */
+        .media-item {
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <div class="project-title">
+            Instagram - Tips to Help Stop the Spread of COVID-19
+        </div>
+
+        <a href="https://rikiki.tv/portfolio/instagram/" class="full-video-link">
+            Full Video
+        </a>
+
+        <!-- 视频内容 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/489525742?h=92875f9073&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="540" height="960" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Instagram_covid19"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
