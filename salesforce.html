@@ -42,18 +42,20 @@
             align-items: center;
         }
 
-        /* 正文样式 */
+        /* 正文样式：恢复斜体 */
         .description-text {
             text-align: center;
             font-size: 1.05em;
             margin-bottom: 30px; 
             color: #333;
+            font-style: italic;
         }
 
-        /* More Info 样式：强制添加下划线 */
+        /* More Info 样式：颜色及强制下划线 */
         .description-text a {
             color: #800000;
             text-decoration: underline !important;
+            font-style: normal; /* 让 More Info 本身不斜体 */
         }
 
         /* 媒体容器 */
