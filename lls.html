@@ -20,7 +20,7 @@
         .site-logo { 
             width: 205px; 
             height: 120px; 
-            margin-bottom: 20px; /* 已修改：统一为20px */
+            margin-bottom: 20px; 
         }
 
         nav { margin-bottom: 50px; }
@@ -31,7 +31,7 @@
             font-size: 0.9em; 
             letter-spacing: 2px; 
             text-transform: uppercase; 
-            transition: color 0.3s ease; /* 已添加：加入悬停渐变过渡 */
+            transition: color 0.3s ease; 
         }
         nav a:hover, nav a.active { color: #000; }
 
@@ -43,12 +43,16 @@
             color: #333;
         }
 
-        .description-text a { color: #800000; text-decoration: none; }
-        .description-text a:hover { text-decoration: underline; }
+        /* More Info 下划线样式 */
+        .description-text a { 
+            color: #800000; 
+            text-decoration: underline; /* 强制显示下划线 */
+        }
+        .description-text a:hover { text-decoration: none; }
 
         /* 视频和图片容器 */
         .media-item {
-            margin-bottom: 40px;
+            margin-bottom: 30px; /* 已修改：统一设置为30px */
             width: 640px;
         }
 
