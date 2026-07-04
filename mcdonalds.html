@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 描述文字区域 */
+        .description-text {
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 30px; 
+            color: #333;
+        }
+
+        /* 斜体项目 */
+        .italic-title { font-style: italic; }
+
+        /* 媒体容器 */
+        .media-item {
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+
+        .media-item p {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .media-item a {
+            color: #666;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <!-- 正文信息 -->
+        <div class="description-text">
+            <span class="italic-title">McDonald's DC SuperHeroes & Mr. Men Little Miss 2021</span><br>
+            Director: Peter Sluszka<br>
+            Lead Animator: Mark Pecoraro<br>
+            Animation: Aleksandra Krechman, Hazel Zheng<br><br>
+            <span class="italic-title">McDonald's: Animal Jam (Penguin) 2018</span><br>
+            Director: Peter Sluszka<br>
+            Lead 2D Animator: Mike Luzzi<br>
+            2D Animators: Mark Pecoraro, Angela De Vito, Qing (Hazel) Zheng, Kathleen Gleeson, Andres Padilla
+        </div>
+
+        <!-- 视频 1 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/307085780?h=1311e6bfab" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/307085780">McDonald's: "Animal Jam" (Penguin) 2018</a> from <a href="https://vimeo.com/user4110961">Marty Geren</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+
+        <!-- 视频 2 -->
+        <div class="media-item">
+            <iframe src="https://player.vimeo.com/video/795306582?h=ce853a2d43&badge=0&autopause=0&player_id=0&app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="McDonald's- &quot;DC&quot; &amp; &quot;Mr. Men &amp; Little Miss&quot; &amp; &quot;Animal Jam &quot;"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
