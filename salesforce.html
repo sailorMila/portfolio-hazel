@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 正文样式 */
+        .description-text {
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 30px; /* 30px 距离 */
+            font-style: italic;
+            color: #333;
+        }
+
+        .description-text a {
+            text-decoration: underline;
+            color: #333;
+        }
+
+        /* 媒体容器 */
+        .media-item {
+            margin-bottom: 30px; /* 30px 距离 */
+            text-align: center;
+        }
+
+        .media-item iframe {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <!-- 正文文字 -->
+        <div class="description-text">
+            Salesforce - Single Source of Truth & Customer 360<br>
+            <a href="https://rikiki.tv/portfolio/salesforce/">More Info</a>
+        </div>
+
+        <!-- 视频 1 -->
+        <div class="media-item">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/491435465?h=6cf8c42829" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- 视频 2 -->
+        <div class="media-item">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/449889857?h=59c7c81c59" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
