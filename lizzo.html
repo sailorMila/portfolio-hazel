@@ -14,73 +14,96 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-y: scroll; /* 强制显示滚动条，防止页面跳转抖动 */
         }
 
-        /* Logo 样式 */
         .site-logo {
             width: 205px;
             height: 120px;
             margin-bottom: 20px;
         }
 
-        /* 导航样式 - 确保与下方内容保持20px间距 */
         nav { margin-bottom: 20px; }
         nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
         nav a:hover, nav a.active { color: #000; }
 
-        /* 内容区通用样式 */
         .content-container {
             max-width: 640px;
             width: 100%;
             text-align: center;
         }
 
-        .media-item {
+        .description-text {
             margin-bottom: 30px;
-        }
-
-        p.description {
-            margin-bottom: 20px;
             font-size: 1.05em;
             color: #555;
+        }
+
+        .media-item {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        /* 响应式 iframe */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 比例 */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .media-item img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <!-- Logo 部分 -->
     <img src="images/logo.png" alt="Logo" class="site-logo">
 
-    <!-- 导航部分 -->
     <nav>
         <a href="index.html">PAINTING</a>
         <a href="animation.html">ANIMATION</a>
         <a href="contact.html">CONTACT</a>
     </nav>
 
-    <!-- 主体内容 -->
     <div class="content-container">
-
+        <!-- 文字描述单独成块 -->
         <div class="description-text">
-        <p>The official lyric video for "Soulmate"</p>
-        <p>featuring Lizzo and Queer Eye's Fab Five! From the album ‘Cuz I Love You.’</p>
+            <p>The official lyric video for "Soulmate"</p>
+            <p>featuring Lizzo and Queer Eye's Fab Five! From the album ‘Cuz I Love You.’</p>
+        </div>
+
         <!-- 视频 1 -->
         <div class="media-item">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/js_FjrxJuxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/js_FjrxJuxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
         <!-- 视频 2 -->
         <div class="media-item">
-            <iframe src="https://player.vimeo.com/video/449923545" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <p><a href="https://vimeo.com/449923545">Lizzo x Queer Eye - Soulmate - Corgis</a> from <a href="https://vimeo.com/hazelzheng">Qing Zheng (Hazel)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/449923545" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <p style="font-size: 0.8em; color: #888;">Lizzo x Queer Eye - Soulmate - Corgis by Qing Zheng (Hazel)</p>
         </div>
 
         <!-- GIF 图片区 -->
-        <div class="media-item"><img src="images/lizzo_orig.gif" alt="Lizzo animation" style="max-width: 100%;"></div>
-        <div class="media-item"><img src="images/1111_orig.gif" alt="Corgi 1" style="max-width: 100%;"></div>
-        <div class="media-item"><img src="images/2222_orig.gif" alt="Corgi 2" style="max-width: 100%;"></div>
-        <div class="media-item"><img src="images/3333_orig.gif" alt="Corgi 3" style="max-width: 100%;"></div>
-
+        <div class="media-item"><img src="images/lizzo_orig.gif" alt="Lizzo animation"></div>
+        <div class="media-item"><img src="images/1111_orig.gif" alt="Corgi 1"></div>
+        <div class="media-item"><img src="images/2222_orig.gif" alt="Corgi 2"></div>
+        <div class="media-item"><img src="images/3333_orig.gif" alt="Corgi 3"></div>
     </div>
 
 </body>
