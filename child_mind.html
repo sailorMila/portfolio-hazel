@@ -8,29 +8,37 @@
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             color: #333;
+            line-height: 1.6;
             margin: 0;
             padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-y: scroll; /* 统一强制滚动条 */
         }
 
-        .site-logo { width: 205px; height: 120px; margin-bottom: 30px; }
+        .site-logo { width: 205px; height: 120px; margin-bottom: 20px; } /* 统一为 20px */
 
-        /* 导航栏到底部内容保持 20px 距离 */
-        nav { margin-bottom: 20px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #888; font-size: 0.9em; letter-spacing: 2px; text-transform: uppercase; }
-        nav a:hover { color: #000; }
+        nav { margin-bottom: 50px; } /* 统一为 50px */
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; /* 统一添加过渡动效 */
+        }
+        nav a:hover, nav a.active { color: #000; }
 
-        /* 使用 Flex 布局统一控制所有垂直间距相等 */
         .content-container {
-            max-width: 800px;
+            max-width: 800px; /* 统一为 800px */
             width: 100%;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px; /* 控制段落、图片、视频之间的间距相等 */
+            gap: 20px;
         }
 
         .description-text {
@@ -40,7 +48,6 @@
         .description-text p { margin: 5px 0; }
         .description-text em { font-style: italic; }
 
-        /* 设置蓝色文字样式 */
         .blue-text { color: #0066cc; }
 
         .main-image { 
@@ -78,7 +85,6 @@
             <p>Animation TD: Mark Pecoraro</p>
             <p>Animators: Michael Luzzi, Sami Healy, Stephen Moverly, Casey McDonald, Andres Padilla, Kathleen Gleeson, Hyo Bin Kang, Tom Smo, Meredith Nolan, Hazel Zheng, Courtney Vonada, Seongjin Yoon</p>
             <p>Clean Up Animators: Josh Brennan, Emma Jansson</p>
-            <!-- 此处应用蓝色字体样式 -->
             <p class="blue-text"><em>Nixie and Nimbo</em> explores some tools children can use to control their anxiety rather than letting it control them.</p>
             <p><a href="https://rikiki.tv/portfolio/nixie-nimbo/">More Info</a></p>
         </div>
