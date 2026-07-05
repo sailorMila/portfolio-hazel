@@ -14,6 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-y: scroll;
         }
 
         .site-logo { 
@@ -36,7 +37,7 @@
 
         .content-container {
             width: 100%;
-            max-width: 800px;
+            max-width: 640px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -46,40 +47,34 @@
         .description-text {
             text-align: center;
             font-size: 1.05em;
-            margin-bottom: 30px; /* 文本到底部视频的距离 */
+            margin-bottom: 30px; /* 文字到视频的距离 */
             color: #333;
         }
 
         .title-italic { font-style: italic; }
 
-        /* 全视频链接样式 */
+        /* Full Video 样式 */
         .full-video-link {
             display: block;
-            margin-top: 10px;
+            margin-top: 0px; 
             color: #800000;
             text-decoration: underline;
         }
 
         /* 统一间距容器 */
         .media-item {
-            margin-bottom: 30px; /* 统一设置视频与图片、图片与图片间的垂直距离 */
+            margin-bottom: 30px; /* 统一设置视频与图片、图片与图片间的距离 */
             text-align: center;
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center; /* 确保容器内元素水平居中 */
-        }
-
-        .media-item iframe {
-            max-width: 100%;
-            width: 640px; /* 设定视频固有宽度 */
+            align-items: center;
         }
 
         .media-item img {
             max-width: 100%;
-            height: auto; /* 保持图片纵横比 */
             display: block;
-            margin: 0 auto; /* 确保图片居中 */
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -102,26 +97,24 @@
             2D Lead Animator: Natalie Labarre<br>
             Animators: Sara Litzenberger, Sami Healy, Hyo Bin Kang, Pengpeng Du, Aran Quinn, Tyler Dibiasio<br>
             Clean Up Animators: Josh Brennan, Tyler Dibiasio, Hazel Zheng, Seongjin Yoon<br>
-            <!-- 注意：用户要求文字是 Full Video，但链接描述写成了 More Info。此处按链接描述为准，文字也更新为 More Info 以匹配超链接意图。 -->
-            <a href="https://hellohornet.com/yves-geleyn.html?project=cyramza-planimation" class="full-video-link">More Info</a>
+            <a href="https://hellohornet.com/yves-geleyn.html?project=cyramza-planimation" class="full-video-link">Full Video</a>
         </div>
 
-        <!-- 视频容器 -->
+        <!-- 视频 -->
         <div class="media-item">
-            <div style="padding:75% 0 0 0;position:relative; width: 100%; max-width: 640px;">
+            <div style="padding:75% 0 0 0;position:relative; width: 100%;">
                 <iframe src="https://player.vimeo.com/video/714839216?h=cc4bc54d72&badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cyramza compressed_01.mov"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
 
-        <!-- 图片 1 -->
+        <!-- 图片 -->
         <div class="media-item">
-            <img src="cyramza_1.jpg" alt="Cyramza Scene 1">
+            <img src="images/cyramza_1.jpg" alt="Cyramza 1">
         </div>
 
-        <!-- 图片 2 -->
         <div class="media-item">
-            <img src="cyramza_2.jpg" alt="Cyramza Scene 2">
+            <img src="images/cyramza_2.jpg" alt="Cyramza 2">
         </div>
 
     </div>
