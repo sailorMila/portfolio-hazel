@@ -86,18 +86,20 @@
             margin: 15px 0 20px;
         }
         .personal-item a {
-            display: inline-block;
-            overflow: hidden;
-            position: relative;
-        }
+            display: block;
+    width: 800px;  /* 必须根据你原本图片的实际宽度设置 */
+    height: 450px; /* 必须根据你原本图片的实际高度设置 */
+    overflow: hidden;
+    position: relative;
+}
 
         .personal-item img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            display: block;
-            transition: transform 0.35s ease;
-        }
+           width: 100%;
+    height: 100%;
+    object-fit: cover; /* 关键：强制新图片填充容器 */
+    display: block;
+    transition: transform 0.35s ease;
+}
 
         /* 悬停缩放效果 */
         .personal-item a:hover img {
