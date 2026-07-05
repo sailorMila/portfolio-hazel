@@ -28,12 +28,12 @@
         nav a:hover, nav a.active { color: #000; }
 
         h2 { 
-    font-size: 1.5em; 
-    color: #555; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    margin: 0 0 20px 0; /* 这里的顺序是：上 右 下 左 */
-}
+            font-size: 1.5em; 
+            color: #555; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin: 0 0 20px 0; 
+        }
         hr { width: 100%; max-width: 900px; border: 0; border-top: 1px solid #eee; margin: 20px 0; }
 
         .projects-grid {
@@ -46,12 +46,11 @@
 
         .project-item { text-align: center; }
 
-        /* 核心修改：定义容器，限制溢出 */
         .project-img-wrapper {
             display: block;
             width: 100%;
             height: 180px;
-            overflow: hidden; /* 关键：超出部分不可见 */
+            overflow: hidden; 
         }
         
         .project-item img {
@@ -59,10 +58,9 @@
             height: 180px;
             object-fit: cover;
             display: block;
-            transition: transform 0.3s ease; /* 仅过渡缩放 */
+            transition: transform 0.3s ease; 
         }
 
-        /* 悬停效果：图片放大，但容器大小不变 */
         .project-img-wrapper:hover img {
             transform: scale(1.05);
         }
@@ -88,10 +86,11 @@
             font-weight: normal;
             margin: 15px 0 20px;
         }
+
         .personal-item a {
             display: inline-block;
             overflow: hidden;
-            position: relative; /* 为伪元素定位做准备 */
+            position: relative;
         }
 
         .personal-item img {
@@ -100,17 +99,15 @@
             height: auto;
             display: block;
             transition: transform 0.35s ease;
-            /* 预加载动画图，防止闪烁 */
-            content: url('images/crossing.jpg'); 
         }
 
-        /* 核心修改：增加悬停替换图片的指令 */
+        /* Crossing 图片悬停切换动画 */
         .personal-item img.crossing-img:hover {
-            content: url('images/crossing_anim.gif'); /* 鼠标悬浮时替换为GIF */
-            transform: scale(1.03); /* 同时保持原有的缩放特效 */
+            content: url('images/crossing_anim.gif');
         }
 
-        .personal-item img:hover {
+        /* 所有 Personal 图片悬停缩放效果 */
+        .personal-item a:hover img {
             transform: scale(1.03);
         }
     </style>
