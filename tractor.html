@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractor - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            max-width: 640px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 正文样式 */
+        .description-text {
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 30px; 
+            color: #333;
+        }
+
+        /* More Info 样式 */
+        .more-info-link {
+            display: block;
+            margin-top: 10px;
+            color: #800000;
+            text-decoration: underline;
+        }
+
+        /* 统一间距容器 */
+        .media-item {
+            margin-bottom: 30px; 
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <!-- 正文信息 -->
+        <div class="description-text">
+            Tractor Beverage Company 'Escape The Ordinary'<br>
+            Director: Andy Baker<br>
+            Production Company: Hornet<br>
+            2D Prep: Ty Enos<br>
+            Animation Director Support: Natalie Labarre<br>
+            Animators: Sami Healy, Ty Enos, Hyo Bin Kang, Matthew Corsillo, Kaycee Nwakudu, Mamadou Barry, Hazel Zheng, Josh Brennan, Ciara Bresnahan, Amália Lage<br>
+            <a href="https://www.andy-baker.com/tractor-escape-the-ordinary" class="more-info-link">More Info</a>
+        </div>
+
+        <!-- 视频容器 -->
+        <div class="media-item">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/846662279?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Tractor Beverage Company 'Escape The Ordinary'"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+
+    </div>
+
+</body>
+</html>
