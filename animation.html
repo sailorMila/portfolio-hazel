@@ -69,7 +69,7 @@
 
         .project-title { margin-top:15px; font-size: 0.85em; color: #777; }
 
-        /* Personal Projects 部分保持不变 */
+        /* Personal Projects 部分 */
         .personal-projects {
             width: 100%;
             max-width: 800px;
@@ -91,6 +91,7 @@
         .personal-item a {
             display: inline-block;
             overflow: hidden;
+            position: relative; /* 为伪元素定位做准备 */
         }
 
         .personal-item img {
@@ -99,6 +100,14 @@
             height: auto;
             display: block;
             transition: transform 0.35s ease;
+            /* 预加载动画图，防止闪烁 */
+            content: url('images/crossing.jpg'); 
+        }
+
+        /* 核心修改：增加悬停替换图片的指令 */
+        .personal-item img.crossing-img:hover {
+            content: url('images/crossing_anim.gif'); /* 鼠标悬浮时替换为GIF */
+            transform: scale(1.03); /* 同时保持原有的缩放特效 */
         }
 
         .personal-item img:hover {
@@ -149,7 +158,7 @@
 
     <div class="personal-projects">
         <h2>PERSONAL PROJECTS</h2>
-        <div class="personal-item"><h3>Crossing</h3><a href="crossing.html"><img src="images/crossing.jpg" alt="Crossing"></a></div>
+        <div class="personal-item"><h3>Crossing</h3><a href="crossing.html"><img src="images/crossing.jpg" alt="Crossing" class="crossing-img"></a></div>
         <div class="personal-item"><h3>Lotus Blossom</h3><a href="lotus_blossom.html"><img src="images/lotus_blossom.jpg" alt="Lotus Blossom"></a></div>
         <div class="personal-item"><h3>1010-Flamenco</h3><a href="flamenco.html"><img src="images/flamenco.jpg" alt="Flamenco"></a></div>
     </div>
