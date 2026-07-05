@@ -101,10 +101,10 @@
             transition: transform 0.35s ease;
         }
 
-        /* Crossing 图片悬停切换动画 */
-        .personal-item img.crossing-img:hover {
-            content: url('images/crossing_anim.gif');
-        }
+        /* 悬停切换逻辑 */
+        .personal-item img.crossing-img:hover { content: url('images/crossing_anim.gif'); }
+        .personal-item img.lotus-img:hover { content: url('images/lotus.gif'); }
+        .personal-item img.flamenco-img:hover { content: url('images/flamenco.gif'); }
 
         /* 所有 Personal 图片悬停缩放效果 */
         .personal-item a:hover img {
@@ -156,8 +156,8 @@
     <div class="personal-projects">
         <h2>PERSONAL PROJECTS</h2>
         <div class="personal-item"><h3>Crossing</h3><a href="crossing.html"><img src="images/crossing.jpg" alt="Crossing" class="crossing-img"></a></div>
-        <div class="personal-item"><h3>Lotus Blossom</h3><a href="lotus_blossom.html"><img src="images/lotus_blossom.jpg" alt="Lotus Blossom"></a></div>
-        <div class="personal-item"><h3>1010-Flamenco</h3><a href="flamenco.html"><img src="images/flamenco.jpg" alt="Flamenco"></a></div>
+        <div class="personal-item"><h3>Lotus Blossom</h3><a href="lotus_blossom.html"><img src="images/lotus_blossom.jpg" alt="Lotus Blossom" class="lotus-img"></a></div>
+        <div class="personal-item"><h3>1010-Flamenco</h3><a href="flamenco.html"><img src="images/flamenco.jpg" alt="Flamenco" class="flamenco-img"></a></div>
     </div>
 
     <script src="https://player.vimeo.com/api/player.js"></script>
