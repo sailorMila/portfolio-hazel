@@ -85,26 +85,35 @@
             font-weight: normal;
             margin: 15px 0 20px;
         }
+        /* 1. 给 a 标签设置固定尺寸，确保外轮廓不变 */
         .personal-item a {
             display: block;
-    width: 800px;  /* 必须根据你原本图片的实际宽度设置 */
-    height: 450px; /* 必须根据你原本图片的实际高度设置 */
-    overflow: hidden;
-    position: relative;
-}
+            width: 800px; /* 请确保此处宽度与您的图片实际宽度一致 */
+            height: 450px; /* 请确保此处高度与您的图片实际高度一致 */
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
 
+       /* 2. 图片覆盖容器，用于显示静态图 */
         .personal-item img {
-           width: 100%;
-    height: 100%;
-    object-fit: cover; /* 关键：强制新图片填充容器 */
-    display: block;
-    transition: transform 0.35s ease;
-}
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease, transform 0.35s ease;
+        }
 
-        /* 悬停缩放效果 */
+       /* 3. 悬停时的缩放逻辑 */
         .personal-item a:hover img {
             transform: scale(1.03);
+            opacity: 0; /* 悬停时隐藏静态图，露出背景的 GIF */
         }
+        /* 4. 为每个项目指定背景 GIF */
+        .crossing-link { background-image: url('images/crossing_anim.gif'); }
+        .lotus-link { background-image: url('images/lotus.gif'); }
+        .flamenco-link { background-image: url('images/flamenco.gif'); }
 
         /* 悬停图片切换指令：确保类名与下方 HTML 一致 */
         .personal-item img.crossing-img:hover { content: url('images/crossing_anim.gif'); }
@@ -155,9 +164,9 @@
 
     <div class="personal-projects">
         <h2>PERSONAL PROJECTS</h2>
-        <div class="personal-item"><h3>Crossing</h3><a href="crossing.html"><img src="images/crossing.jpg" alt="Crossing" class="crossing-img"></a></div>
-        <div class="personal-item"><h3>Lotus Blossom</h3><a href="lotus_blossom.html"><img src="images/lotus_blossom.jpg" alt="Lotus Blossom" class="lotus-img"></a></div>
-        <div class="personal-item"><h3>1010-Flamenco</h3><a href="flamenco.html"><img src="images/flamenco.jpg" alt="Flamenco" class="flamenco-img"></a></div>
+        <div class="personal-item"><h3>Crossing</h3><a href="crossing.html" class="crossing-link"><img src="images/crossing.jpg" alt="Crossing"></a></div>
+        <div class="personal-item"><h3>Lotus Blossom</h3><a href="lotus_blossom.html" class="lotus-link"><img src="images/lotus_blossom.jpg" alt="Lotus Blossom"></a></div>
+        <div class="personal-item"><h3>1010-Flamenco</h3><a href="flamenco.html" class="flamenco-link"><img src="images/flamenco.jpg" alt="Flamenco"></a></div>
     </div>
 
     <script src="https://player.vimeo.com/api/player.js"></script>
