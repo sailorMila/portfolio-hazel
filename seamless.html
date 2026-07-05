@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless - Hazel Zheng</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .site-logo { 
+            width: 205px; 
+            height: 120px; 
+            margin-bottom: 20px; 
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #888; 
+            font-size: 0.9em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+        }
+        nav a:hover, nav a.active { color: #000; }
+
+        .content-container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .description-text {
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 30px; 
+            color: #333;
+        }
+
+        .more-link {
+            display: block;
+            margin-top: 10px;
+            color: #800000;
+            text-decoration: underline;
+        }
+
+        .media-item {
+            margin-bottom: 30px; 
+            text-align: center;
+            width: 100%;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1280px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="animation.html" class="active">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="content-container">
+        
+        <div class="description-text">
+            Seamless ‘We Fueled This City’<br>
+            Director: Andy Baker<br>
+            Production Company: Hornet<br>
+            Animators: Jared Deal, Tyler Dibiasio, Krystal Downs, Sami Healy, Hyo Bin Kang, Natalie Labarre, Sara Litzenberger, Harry Teitelman, Hazel Zheng<br>
+            Clean up & Colour: Andy Kennedy, Caitlin Fogarty, Jon Yellowhair<br>
+            <a href="https://www.andy-baker.com/seamless" class="more-link">more</a>
+        </div>
+
+        <div class="media-item video-wrapper">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/321275172?h=309c8131b3" width="100%" height="auto" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
