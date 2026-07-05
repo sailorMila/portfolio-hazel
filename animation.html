@@ -67,7 +67,6 @@
 
         .project-title { margin-top:15px; font-size: 0.85em; color: #777; }
 
-        /* Personal Projects 部分 */
         .personal-projects {
             width: 100%;
             max-width: 800px;
@@ -86,7 +85,6 @@
             font-weight: normal;
             margin: 15px 0 20px;
         }
-
         .personal-item a {
             display: inline-block;
             overflow: hidden;
@@ -101,15 +99,15 @@
             transition: transform 0.35s ease;
         }
 
-        /* 悬停切换逻辑 */
-        .personal-item img.crossing-img:hover { content: url('images/crossing_anim.gif'); }
-        .personal-item img.lotus-img:hover { content: url('images/lotus.gif'); }
-        .personal-item img.flamenco-img:hover { content: url('images/flamenco.gif'); }
-
-        /* 所有 Personal 图片悬停缩放效果 */
+        /* 悬停缩放效果保持不变 */
         .personal-item a:hover img {
             transform: scale(1.03);
         }
+
+        /* 新增：悬停图片切换指令 */
+        .personal-item img.crossing-img:hover { content: url('images/crossing_anim.gif'); }
+        .personal-item img.lotus-img:hover { content: url('images/lotus.gif'); }
+        .personal-item img.flamenco-img:hover { content: url('images/flamenco.gif'); }
     </style>
 </head>
 <body>
