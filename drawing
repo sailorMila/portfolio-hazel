@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drawing</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .site-logo {
+            width: 205px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        nav { margin-bottom: 50px; }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a.active {
+            color: #000;
+        }
+
+        .container { max-width: 1000px; text-align: left; width: 100%; }
+
+        .image-wrapper {
+            width: 100%;
+            overflow: hidden;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+            transform: scale(1);
+        }
+
+        .image-wrapper:hover img {
+            transform: scale(1.04);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="Logo" class="site-logo">
+
+    <nav>
+        <a href="index.html">PAINTING</a>
+        <a href="drawing.html" class="active">DRAWING</a>
+        <a href="animation.html">ANIMATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="container">
+        <a href="images/hybird01.jpg" target="_blank" class="image-wrapper">
+            <img src="images/hybird01.jpg" alt="hybird01">
+        </a>
+
+        <a href="images/hybird02.jpg" target="_blank" class="image-wrapper">
+            <img src="images/hybird02.jpg" alt="hybird02">
+        </a>
+
+        <a href="images/hybird03.jpg" target="_blank" class="image-wrapper">
+            <img src="images/hybird03.jpg" alt="hybird03">
+        </a>
+
+        <a href="images/hybird04.jpg" target="_blank" class="image-wrapper">
+            <img src="images/hybird04.jpg" alt="hybird04">
+        </a>
+    </div>
+
+</body>
+</html>
